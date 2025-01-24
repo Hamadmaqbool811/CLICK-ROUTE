@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Route</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <h1>Welcome To Click Route</h1>
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Find me...">
+        <button class="search-button">Search</button>
+ 
+     </div>
+    <ul>
+        <li><a href="Courses.html">COURSES</a></li>
+        <li><a href="products.html">ADVANCEMENT OF TECHNOLOGY</a></li>
+        <li><a href="Certificates.html">CERTIFIFCATES/DOMINS</a></li>
+        <li><a href="News.html">USE OF Different LANGUAGES</a></li>
+    </ul>
+   
+    <div class="button-container">
+        <a href="login.html">
+        <button class="LOGIN-btn"onclick="Login()">LOGIN</button></a>
+        <a href="sign up.html">
+       <button class="SIGN UP-btn"onclick="SIGN UP()">SIGN UP</button></a>
+
+    </div>
+  <!-- Just an image without a link -->
+<img src="favicon.ico" alt="icon">
+<style>
+    /* Reset default styles */
+    h2, p, ul, li {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Body and background */
+    body {
+        background-color: #f4f4f4;
+        line-height: 1.6;
+        color: #333;
+        
+    }
+
+    /* Header Section */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    
+
+    /* Content Section */
+    .content-section {
+        margin-top: 40px;
+    }
+
+    .category-title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .content-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .content-item {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        margin: 10px;
+        width: 220px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .content-item:hover {
+        background-color: #45a049;
+    }
+
+    .content-item.hidden {
+        display: none;
+    }
+    @media (max-width: 720px) {
+            /* Adjustments for screens up to 720px */
+            h1 {
+                font-size: 28px; /* Slightly smaller font size for header */
+            }
+            img {
+    margin: 0px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+            /* Logo Styling */
+            .logo {
+                width: 60px; /* Make logo a bit smaller */
+            }
+
+            .search-container {
+            
+                align-items: center;
+                width: 100%;
+            }
+
+            .search-bar {
+                width: 80%; /* Make the search bar more responsive */
+                margin-bottom: 10px;
+            }
+
+            .search-button {
+                width: 80%; /* Make the search button also responsive */
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                width: 710px;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+         
+            .content-item {
+                width: 100%; /* Content items take up full width on small screens */
+                padding: 10px;
+            }
+        }
+
+        /* For smaller screens, max-width 480px (optional) */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px; /* Adjust title size for smaller screens */
+                margin-bottom: 15px;
+            }
+
+            .search-bar {
+                width: 90%; /* Make search bar even larger on small screens */
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            .search-button {
+                width: 90%;
+                padding: 12px;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+     
+            }
+
+            .logo {
+                width: 50px; /* Further reduce logo size on very small screens */
+            }
+        }
+        
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h2>Click Route - Learn, Explore, Grow</h2>
+</header>
+
+
+
+<!-- Courses Section -->
+<section class="content-section" id="coursesSection">
+    <h2 class="category-title">PYTHON</h2>
+    <div class="content-list" id="coursesList">
+        <div class="content-item"><a href="instal python.html">Install Python</a></div>
+        <div class="content-item"><a href="python.html">Python</a></div>
+        <div class="content-item"><a href="train python.html">Robotics Python</a></div>
+        <div class="content-item"><a href="speek python.html">speak with python</a></div>
+        <div class="content-item"><a href="test python.html">python exercise</a></div>
+        <div class="content-item"><a href="hero py.html">python Mastery </a></div>
+        <div class="content-item"><a href="ai python.html">python AI</a></div>
+        <div class="content-item"><a href="flask.html">python flask framework</a></div>
+        <div class="content-item"><a href="python web.py">python in web dev</a></div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="content-section" id="newsSection">
+    <h2 class="category-title">WEB DVELOPMENT</h2>
+    <div class="content-list" id="newsList">
+        <div class="content-item"><a href="HTML.html">HTML</a></div>
+        <div class="content-item"><a href="css.html">CSS</a></div>
+        <div class="content-item"><a href="javascript.html">JAVASCRIPT</a></div>
+        <div class="content-item"><a href="javasc.html"> JAVASCRIPT advance</a></div>
+        <div class="content-item"><a href="web.html"> WEB DEVELOPMENT PROJECTS</a></div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="content-section" id="productsSection">
+    <h2 class="category-title">JAVA</h2>
+    <div class="content-list" id="productsList">
+        <div class="content-item">Laptop</div>
+        <div class="content-item">Smartphone</div>
+        <div class="content-item">Headphones</div>
+        <div class="content-item">Smart Watch</div>
+        <div class="content-item">Tablet</div>
+    </div>
+</section>
+
+<!-- Certificates Section -->
+<section class="content-section" id="certificatesSection">
+    <h2 class="category-title">C++</h2>
+    <div class="content-list" id="certificatesList">
+        <div class="content-item">Web Development Certification</div>
+        <div class="content-item">Data Science Certification</div>
+        <div class="content-item">AI and ML Certification</div>
+        <div class="content-item">Digital Marketing Certificate</div>
+        <div class="content-item">Graphic Design Certification</div>
+    </div>
+<section class="content-section" id="certificatesSection">
+    <h2 class="category-title">C#</h2>
+    <div class="content-list" id="certificatesList">
+        <div class="content-item">Web Development Certification</div>
+        <div class="content-item">Data Science Certification</div>
+        <div class="content-item">AI and ML Certification</div>
+        <div class="content-item">Digital Marketing Certificate</div>
+        <div class="content-item">Graphic Design Certification</div>
+    </div>
+<section class="content-section" id="certificatesSection">
+    <h2 class="category-title">APP DEVELOPMENT</h2>
+    <div class="content-list" id="certificatesList">
+        <div class="content-item">Web APP</div>
+        <div class="content-item">MOBILE APP</div>
+        <div class="content-item">DESKTOP APP</div>
+        <div class="content-item">MULTI-Media APP</div>
+        <div class="content-item">ADVANCE APP MANAJMENT</div>
+    </div>
+<section class="content-section" id="certificatesSection">
+    <h2 class="category-title">AI (artificial intelligence)</h2>
+    <div class="content-list" id="certificatesList">
+        <div class="content-item">WEAK AI</div>
+        <div class="content-item">STRONG AI</div>
+        <div class="content-item">SUPER AI`</div>
+        <div class="content-item">MACHINE Learning</div>
+        <div class="content-item">DEEP Learning</div>
+    </div>
+</section>
+<script>
+   
+    // Function to filter courses, news, products, and certificates based on search input
+    function searchContent() {
+        let searchInput = document.getElementById("searchBar").value.toLowerCase(); // Get the search input
+        let contentSections = ['courses', 'news', 'products', 'certificates'];
+
+        // Loop through each content section
+        contentSections.forEach(section => {
+            let items = document.querySelectorAll(`#${section}List .content-item`); // Get all items in the section
+            items.forEach(item => {
+                let content = item.textContent.toLowerCase(); // Get the text of the content item
+                if (content.indexOf(searchInput) > -1) {
+                    item.classList.remove('hidden'); // Show content item
+                } else {
+                    item.classList.add('hidden'); // Hide content item
+                }
+            });
+        });
+    }
+</script>
+
+
+<script src="scipt.js"></script> 
+</body>
+</html>
